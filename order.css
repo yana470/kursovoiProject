@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-color: #E6F5E6;
+    font-family: 'JejuMyeongjo', serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 180px;
+}
+
+.form-block {
+    width: 350px;
+    background: #d9e8d9;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background: #A8C9A8;
+}
+
+.back-btn, .home-btn {
+    background: #CDE3CD;
+}
+
+.image-block img {
+    width: 420px;
+    border-radius: 20px;
+}
+
+.line-top-dark {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+}
+
+.line-top-light {
+    position: fixed;
+    top: 43px;
+    left: 0;
+    z-index: 9;
+}
+
+.line-left-dark {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    z-index: 10;
+}
+
+.line-left-light {
+    position: fixed;
+    top: 0;
+    left: 43px;
+    z-index: 9;
+}
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+
+    .form-block {
+        width: 90%;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .image-block img {
+        width: 260px;
+        border-radius: 16px;
+    }
+
+    .line-top-dark {
+        top: 10px;
+        width: 100px;
+    }
+
+    .line-top-light {
+        top: 28px;
+        width: 100px;
+    }
+
+    .line-left-dark {
+        left: 10px;
+        height: 100px;
+    }
+
+    .line-left-light {
+        left: 28px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,176 @@
+body {
+    background-color: #FCD5B4;
+    margin: 0;
+}
+* {
+    font-family: 'Jeju Myeongjo', serif;
+}
+
+.full-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Градиент сверху */
+.full-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(
+        to bottom,
+        #FCD5B4,
+        rgba(252, 213, 180, 0.8),
+        rgba(252, 213, 180, 0.4),
+        rgba(252, 213, 180, 0)
+    );
+    z-index: 1;
+    
+}
+
+.back-btn {
+    background: #D5B37C;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.map-title {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.region {
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.america {
+    position: absolute;
+    left: 5%;
+    top: 23%;      
+    width: 28%;
+    height: 75%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.africa {
+    position: absolute;
+    left: 40%;
+    top: 45%;      
+    width: 20%;
+    height: 38%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.australia {
+    position: absolute;
+    left: 78%;
+    top: 70%;      
+    width: 15%;
+    height: 18%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.europe {
+    position: absolute;
+    left: 42%;
+    top: 22%;
+    width: 18%;
+    height: 22%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.asia {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    width: 30%;
+    height: 37%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .map-title {
+        font-size: 22px;
+        top: 15px;
+    }
+
+    .back-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .full-bg {
+        height: 100vh;
+    }
+
+    .bg-img {
+        object-fit: contain; 
+        background-color: #FCD5B4;
+    }
+
+    .region {
+        transform: scale(0.7);
+        transform-origin: top left;
+    }
+
+    .america {
+        left: 3%;
+        top: 28%;
+    }
+
+    .africa {
+        left: 38%;
+        top: 52%;
+    }
+
+    .australia {
+        left: 72%;
+        top: 78%;
+    }
+
+    .europe {
+        left: 40%;
+        top: 28%;
+    }
+
+    .asia {
+        left: 58%;
+        top: 26%;
+    }
+}
+
+
+
+

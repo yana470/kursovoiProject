@@ -121,14 +121,14 @@ body {
 @media (max-width: 768px) {
 
     .map-title {
-        font-size: 22px;
-        top: 15px;
+        font-size: 15px;
+        top: 50px;
     }
 
     .back-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 15px;
+        padding: 8px 18px;
+        font-size: 14px;
+        margin: 10px;
     }
 
     .full-bg {
@@ -136,38 +136,37 @@ body {
     }
 
     .bg-img {
-        object-fit: contain; 
-        background-color: #FCD5B4;
+        object-fit: contain;
     }
 
     .region {
-        transform: scale(0.7);
+        transform: scale(0.55);
         transform-origin: top left;
     }
 
     .america {
-        left: 3%;
-        top: 28%;
+        top: 38%;
+        left: 14%;
     }
 
     .africa {
-        left: 38%;
-        top: 52%;
+        top: 55%;
+        left: 50%;
     }
 
     .australia {
-        left: 72%;
-        top: 78%;
+        top: 58%;
+        left: 81%;
     }
 
     .europe {
+        top: 39%;
         left: 40%;
-        top: 28%;
     }
 
     .asia {
+        top: 34%;
         left: 58%;
-        top: 26%;
     }
 }
 

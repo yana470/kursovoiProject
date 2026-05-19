@@ -110,8 +110,6 @@ body {
     margin-left: -90px;
 }
 
-
-
 .info-block {
     max-width: 350px;
     text-align: center;
@@ -200,15 +198,6 @@ body {
 .store-list li {
     font-size: 16px;
     margin-bottom: 8px;
-}
-
-.footer {
-    background: #878C85;
-    padding: 40px 80px;
-    text-align: center;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.8;
 }
 
 .footer p {
